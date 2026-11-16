@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@theme {
+  /* Neutral Harmony Bliss Palette */
+  --color-sand-50: #fbf9f4;
+  --color-sand-100: #f4f1de; /* Exact #F4F1DE */
+  --color-sand-200: #eae4c8;
+  --color-sand-300: #ded4b0;
+  --color-sand-400: #cfbf92;
+
+  /* Terracotta (Primary Accent #E07A5F) */
+  --color-brand-50: #fdf6f3;
+  --color-brand-100: #fcece7;
+  --color-brand-200: #f8d5cb;
+  --color-brand-300: #f1b3a3;
+  --color-brand-400: #e98f79;
+  --color-brand-500: #e07a5f; /* Exact #E07A5F */
+  --color-brand-600: #d06549;
+  --color-brand-700: #b05037;
+  --color-brand-800: #8f402b;
+  --color-brand-900: #743627;
+
+  /* Sage Green (Secondary Accent #81B29A) */
+  --color-teal-50: #f3f8f6;
+  --color-teal-100: #e3f0ea;
+  --color-teal-200: #c7e1d5;
+  --color-teal-300: #a7d0be;
+  --color-teal-400: #81b29a; /* Exact #81B29A */
+  --color-teal-500: #6ea48a;
+  --color-teal-600: #558c73;
+  --color-teal-700: #426f5b;
+  --color-teal-800: #335546;
+
+  /* Warm Honey (Highlight #F2CC8F) */
+  --color-honey-50: #fdfbf7;
+  --color-honey-100: #fcf4e6;
+  --color-honey-200: #f8e5c5;
+  --color-honey-300: #f5d7a2;
+  --color-honey-400: #f2cc8f; /* Exact #F2CC8F */
+  --color-honey-500: #e4b76e;
+  --color-honey-600: #c99849;
+  --color-honey-700: #9e732c;
+
+  /* Deep Slate Navy (Deep Charcoal Contrast #3D405B) */
+  --color-slate-50: #fafafc;
+  --color-slate-100: #f2f3f7;
+  --color-slate-200: #e3e5ed;
+  --color-slate-300: #c9cddb;
+  --color-slate-400: #9da3ba;
+  --color-slate-500: #707794;
+  --color-slate-600: #525875;
+  --color-slate-700: #424660;
+  --color-slate-800: #3d405b; /* Exact #3D405B */
+  --color-slate-900: #292b3f;
+  --color-slate-950: #1b1c2b;
+
+  --font-display: "Work Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+
+  --max-w-reading: 72ch;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-body);
+    color: var(--color-slate-800);
+    background-color: #faf8f3;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    color: var(--color-slate-900);
+    font-weight: 700;
+  }
+
+  button, input, select, textarea, label {
+    font-family: var(--font-display);
+  }
+}
+
+/* Accessible focus ring */
+:focus-visible {
+  outline: 2px solid #e07a5f;
+  outline-offset: 2px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f4f1de;
+}
+::-webkit-scrollbar-thumb {
+  background: #cfbf92;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b05037;
+}
