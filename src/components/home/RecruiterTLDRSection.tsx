@@ -110,9 +110,19 @@ export function RecruiterTLDRSection() {
               href={profile.linkedInUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 px-3.5 py-2 rounded-xl text-slate-700 hover:text-slate-900 hover:bg-sand-100 font-display font-medium text-xs sm:text-sm transition-colors"
+              className="inline-flex items-center gap-1 px-3.5 py-2 rounded-xl text-slate-700 hover:text-slate-900 hover:bg-sand-100 font-display font-medium text-xs sm:text-sm transition-colors min-h-[44px]"
             >
               <span>LinkedIn</span>
+              <ArrowUpRight className="w-3.5 h-3.5 text-slate-400" aria-hidden="true" />
+            </a>
+
+            <a
+              href={profile.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 px-3.5 py-2 rounded-xl text-slate-700 hover:text-slate-900 hover:bg-sand-100 font-display font-medium text-xs sm:text-sm transition-colors min-h-[44px]"
+            >
+              <span>GitHub</span>
               <ArrowUpRight className="w-3.5 h-3.5 text-slate-400" aria-hidden="true" />
             </a>
           </div>

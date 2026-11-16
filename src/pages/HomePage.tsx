@@ -12,6 +12,7 @@ import { HeroSection } from "../components/home/HeroSection";
 import { RecruiterTLDRSection } from "../components/home/RecruiterTLDRSection";
 import { CapabilitiesMindMap } from "../components/home/CapabilitiesMindMap";
 import { WorkingApproachFlow } from "../components/home/WorkingApproachFlow";
+import { LinkedInVideosSection } from "../components/home/LinkedInVideosSection";
 
 export function HomePage() {
   const emsProject = projects.find((p) => p.slug === "ems2-express")!;
@@ -29,7 +30,10 @@ export function HomePage() {
         <DesignerLenses />
       </section>
 
-      {/* 3. SELECTED WORK SECTION */}
+      {/* 4. LINKEDIN VIDEOS & KNOWLEDGE SHARING */}
+      <LinkedInVideosSection />
+
+      {/* 5. SELECTED WORK SECTION */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-6 border-b border-sand-200">
           <div>
@@ -203,6 +207,16 @@ export function HomePage() {
                 className="inline-flex items-center gap-1.5 px-4 py-3.5 text-sm font-display text-slate-300 hover:text-white transition-colors min-h-[44px]"
               >
                 <span>LinkedIn Profile</span>
+                <ArrowUpRight className="w-4 h-4" aria-hidden="true" />
+              </a>
+
+              <a
+                href={profile.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-4 py-3.5 text-sm font-display text-slate-300 hover:text-white transition-colors min-h-[44px]"
+              >
+                <span>GitHub</span>
                 <ArrowUpRight className="w-4 h-4" aria-hidden="true" />
               </a>
             </div>

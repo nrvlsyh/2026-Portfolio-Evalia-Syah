@@ -69,6 +69,17 @@ export function Footer() {
               </li>
               <li>
                 <a
+                  href={profile.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 hover:text-white transition-colors py-1"
+                >
+                  <span>GitHub</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 text-slate-400" aria-hidden="true" />
+                </a>
+              </li>
+              <li>
+                <a
                   href={profile.cvPath}
                   download={profile.cvFilename}
                   onClick={handleDownloadCV}

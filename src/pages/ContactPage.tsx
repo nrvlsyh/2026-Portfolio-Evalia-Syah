@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react";
-import { Mail, Linkedin, FileDown, Send, CheckCircle2, ArrowUpRight, Copy, Check, Sparkles } from "lucide-react";
+import { Mail, Linkedin, Github, FileDown, Send, CheckCircle2, ArrowUpRight, Copy, Check, Sparkles } from "lucide-react";
 import { motion } from "motion/react";
 import { profile } from "../config/profileConfig";
 import { handleDownloadCV } from "../utils/downloadCv";
@@ -94,6 +94,19 @@ export function ContactPage() {
                 <div className="flex items-center gap-2.5">
                   <Linkedin className="w-4 h-4 text-brand-600" />
                   <span className="font-semibold">LinkedIn Profile</span>
+                </div>
+                <ArrowUpRight className="w-4 h-4 text-slate-400 group-hover:text-brand-600 transition-colors" />
+              </a>
+
+              <a
+                href={profile.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between p-3.5 rounded-xl border border-sand-200 hover:border-brand-300 hover:bg-brand-50/50 transition-colors text-xs sm:text-sm text-slate-800 font-medium group min-h-[44px]"
+              >
+                <div className="flex items-center gap-2.5">
+                  <Github className="w-4 h-4 text-brand-600" />
+                  <span className="font-semibold">GitHub Profile</span>
                 </div>
                 <ArrowUpRight className="w-4 h-4 text-slate-400 group-hover:text-brand-600 transition-colors" />
               </a>
